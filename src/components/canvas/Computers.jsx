@@ -5,14 +5,17 @@ import { meshBounds, OrbitControls, PerspectiveCamera, useGLTF } from '@react-th
 import CanvasLoader from '../Loader'
 
 const Computers = () => {
-  const computer = useGLTF('./desktop_pc/scene.gltf') 
+  const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
     <mesh>
-      <hemisphereLight intensity={0.15} groundColor="black" />
-      <pointLight intensity={1} />
+      {/* <hemisphereLight intensity={0.15} groundColor="black" />
+      <pointLight intensity={1} /> */}
       <primitive
         object={computer.scene}
+        scale={2.5}
+        position={[0, 0, 2]}
+        rotation={[0.0, 0.0, 0.0]}
       />
     </mesh>
   );
