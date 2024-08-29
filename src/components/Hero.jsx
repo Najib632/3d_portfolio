@@ -40,7 +40,7 @@ const Hero = () => {
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
 export default Hero;
